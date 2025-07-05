@@ -1,18 +1,17 @@
 *** Settings ***
 
-Library    AppiumLibrary
+Resource    ../resources/utils/openApplication.resource
+
+Test Setup       Open App
+Test Teardown    Close App
 
 *** Test Cases ***
 
 Open Home Screen
+     [Documentation]    Open the home screen of the app    
 
-     Open Application    http://localhost:4723
-    ...    platformName=Android
-    ...   deviceName=Android Emulator
-    ...   automationName=UIAutomator2
-    ...   app=${EXECDIR}/App/saucedemo.apk
-    ...   udid=emulator-5554
-  
-  Wait Until Page Contains    Products
+     Wait Until Text Is Visible     Products
+     Wait Until Text Is Visible     Products
 
-  Close Application
+
+
