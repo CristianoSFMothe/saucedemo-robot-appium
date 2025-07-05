@@ -12,3 +12,8 @@ Resource    ../resources/utils/customKeywords.resource
 Resource    ../resources/screen/catalog.resource
 
 
+##### Variables
+Variables    ../resources/locators/common.yaml
+
+
+

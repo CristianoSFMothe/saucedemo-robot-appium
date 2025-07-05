@@ -17,3 +17,8 @@ Click Random Product By Name
 
     Log To Console    Clicking on product: ${name}
     Click Element     xpath=//android.widget.TextView[@text='${name}']  
+
+    Wait Until Text Is Visible     ${name}
+    Wait Until Text Is Visible     ${name}
+
+    

@@ -17,3 +17,9 @@ Get Json Data
     
 
     RETURN    ${data}[${scenario}]
+
+Wait Button Is Visible
+    [Arguments]    ${button_text}
+    
+    Wait Until Page Contains Element    ${buttons.addToCart.format(text='${button_text}')}    timeout=10s
+    # Wait Until Element Is Visible    xpath=//android.widget.Button[@text='${button_text}']    

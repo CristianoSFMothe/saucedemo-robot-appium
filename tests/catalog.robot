@@ -16,8 +16,7 @@ Open Home Screen
 Open Product In Catalog Screen
     [Tags]            catalog_product
     [Documentation]    Open a random product in the catalog screen
-
-#     Open Application Catalog Screen
+    
     Click Random Product By Name
 
 
