@@ -1,0 +1,4 @@
+cart:
+  addToCartButton: "accessibility_id=Add To Cart button"
+  cartBadgeIcon: "xpath=//android.view.ViewGroup[@content-desc='cart badge']/android.widget.ImageView"
+  cartBadgeText: "xpath=//android.view.ViewGroup[@content-desc='cart badge']/android.widget.TextView"

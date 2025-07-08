@@ -1,2 +1,3 @@
-buttons:
+common:
   addToCart: "accessibility_id=Add To Cart button"
+  waitTextVisible: xpath=//android.widget.TextView[@text='{text}']
