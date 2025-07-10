@@ -221,6 +221,38 @@ robot tests/
 
 ---
 
+Perfeito! Aqui está a **seção atualizada do `README.md`** com os **cenários cobertos e pendentes**, conforme solicitado, seguindo o estilo e formatação usados no restante do documento:
+
+---
+
+## 🧪 Test Scenarios
+
+### ✔️ Implemented Scenarios
+
+- [x] Access the application and view the product catalog
+- [x] Add a product to the cart and view its details
+- [x] Increase the quantity of a product, add to cart, and verify total price
+
+### 🛠️ Planned Scenario
+
+- [ ] Remove a product from the cart and update the final price
+- [ ] Remove all items from the cart
+- [ ] Add product to cart and proceed to checkout
+- [ ] Login with an existing account
+- [ ] Add a credit card
+- [ ] Complete the payment process
+- [ ] Open the side navigation menu
+- [ ] Access the QR Code scanner
+- [ ] Access geolocation features
+- [ ] Create a drawing
+- [ ] View "About" section
+- [ ] Enable biometric authentication
+- [ ] Create a new user account
+- [ ] Open "API Calls" section
+- [ ] Perform swipe gesture interaction
+
+---
+
 ## 📌 License
 
 This project is open source and under the MIT License.
