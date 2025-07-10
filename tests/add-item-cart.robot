@@ -11,10 +11,13 @@ Test Teardown    Close App
 Open Product In Catalog Screen
     [Tags]             add_product
     [Documentation]    Add item to cart by name
-  
+
     Open Product Details           Sauce Labs Backpack
     Add Product To Cart By Name    Sauce Labs Backpack
-    
-    
 
-    
+Add Product And Increase Quantity Product In Cart
+    [Tags]             increase_qtd
+    [Documentation]    Add item to cart by name
+
+    Open Product Details           Sauce Labs Backpack
+    Increase Product Quantity      Sauce Labs Backpack  2  

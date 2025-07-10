@@ -9,8 +9,8 @@ Open App
     ...                 deviceName=Android Emulator
     ...                 automationName=UIAutomator2
     ...                 app=${EXECDIR}/App/saucedemo.apk
-    ...                 udid=emulator-5554
-    
+    ...                 udid=emulator-5554    
     
 Close App
-    Close Application    
+    Capture Page Screenshot
+    Close Application  

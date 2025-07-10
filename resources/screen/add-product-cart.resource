@@ -37,4 +37,21 @@ Add Product To Cart By Name
     Should Be True    '${badge}' != ''
     Log To Console    Produto adicionado ao carrinho com quantidade: ${badge}
 
-    
+Increase Product Quantity
+    [Arguments]    ${name}    ${quantity}    ${initial_value}=1
+
+    Log    Initial value: ${initial_value}
+
+    FOR    ${i}    IN RANGE    ${quantity}
+        Click Element    ${cart.buttonPlus}
+    END
+
+    ${final_value}=    Evaluate    ${initial_value} + ${quantity}
+    Log    Final expected value: ${final_value}
+
+    ${locator}=    Set Variable    xpath=//android.widget.TextView[@text="${final_value}"]
+
+    Wait Until Element Is Visible    ${locator}    timeout=10s
+    Log    Counter updated to: ${final_value}
+
+    Click Element    ${cart.addToCartButton}

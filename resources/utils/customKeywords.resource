@@ -21,5 +21,26 @@ Get Json Data
 Wait Button Is Visible
     [Arguments]    ${button_text}
     
-    Wait Until Page Contains Element    ${buttons.addToCart.format(text='${button_text}')}    timeout=10s
-    Wait Until Element Is Visible    xpath=//android.widget.Button[@text='${button_text}']    
+    Wait Until Page Contains Element    
+    ...    ${common.addToCart.format(text='${button_text}')}    
+    ...    timeout=10s
+    Wait Until Element Is Visible    
+    ...    xpath=//android.widget.Button[@text='${button_text}']    
+
+# Verify Counter Increased
+#     [Arguments]    ${initial}    ${counter_locator}
+
+#     ${current}=    Get Text    ${counter_locator}
+#     Log    Current counter value: ${current}
+#     Should Not Be Equal As Strings    ${current}    ${initial}
+
+Verify Counter Increased
+    [Arguments]    ${initial}    ${counter_locator}
+
+    ${current}=    Get Text    ${counter_locator}
+    Log    Current counter value: ${current}
+
+    ${initial_int}=    Convert To Integer    ${initial}
+    ${current_int}=    Convert To Integer    ${current}
+
+    Should Be True    ${current_int} > ${initial_int}    msg=Counter did not increase!
