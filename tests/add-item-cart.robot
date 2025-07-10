@@ -17,7 +17,9 @@ Open Product In Catalog Screen
 
 Add Product And Increase Quantity Product In Cart
     [Tags]             increase_qtd
-    [Documentation]    Add item to cart by name
+    [Documentation]    Add item to cart and increase quantity
 
-    Open Product Details           Sauce Labs Backpack
-    Increase Product Quantity      Sauce Labs Backpack  2  
+    Open Product Details            Sauce Labs Backpack
+    ${final}=    Increase Product Quantity    Sauce Labs Backpack    2
+    Click Button Cart
+    Verify Total Price In Cart      $29.99    ${final}

@@ -1,7 +1,9 @@
 cart:
   addToCartButton: "accessibility_id=Add To Cart button"
-  cartBadgeIcon: "xpath=//android.view.ViewGroup[@content-desc='cart badge']/android.widget.ImageView"
+  cartBadgeIcon: "accessibility_id=cart badge"
   cartBadgeText: "xpath=//android.view.ViewGroup[@content-desc='cart badge']/android.widget.TextView"
   buttonPlus: "accessibility_id=counter plus button"
   buttonMinus: "accessibility_id=counter minus button"
-  counterAmount: xpath=//android.widget.TextView[@text='{number}']
+  productPriceUnit: "accessibility_id=product price"
+  footerCart: "accessibility_id=checkout footer"
+  totalPrice: "accessibility_id=total price"

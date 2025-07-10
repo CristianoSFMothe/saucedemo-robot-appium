@@ -27,13 +27,6 @@ Wait Button Is Visible
     Wait Until Element Is Visible    
     ...    xpath=//android.widget.Button[@text='${button_text}']    
 
-# Verify Counter Increased
-#     [Arguments]    ${initial}    ${counter_locator}
-
-#     ${current}=    Get Text    ${counter_locator}
-#     Log    Current counter value: ${current}
-#     Should Not Be Equal As Strings    ${current}    ${initial}
-
 Verify Counter Increased
     [Arguments]    ${initial}    ${counter_locator}
 
